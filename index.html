@@ -2,10 +2,12 @@
 <html lang="en">
 
 <head>
-    <title>Social Media</title>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/rectangle-5@2x.png" type="image/x-icon">
+    <title>Social Media</title>
 
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -15,7 +17,7 @@
     <style>
         :root {
             --navBg: #A9DEF9;
-            --bgSecondary: #E5E5E5;
+            --bgColor: #E5E5E5;
             --smFont: 12px;
         }
 
@@ -32,7 +34,7 @@
         .navbar {
             background-color: var(--navBg);
             display: flex;
-            justify-content: space-evenly;
+            justify-content: space-around;
             align-items: center;
         }
 
@@ -56,7 +58,7 @@
         }
 
         .tiles-btn:not(:last-child) {
-            margin-right: 7px;
+            margin-right: 10px;
         }
 
         .tiles-btn {
@@ -64,7 +66,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            border-radius: 10px;
+            border-radius: 8px;
         }
 
         .search {
@@ -77,53 +79,96 @@
         }
 
         .profile-img {
-            border-radius: 5px;
+            border-radius: 8px;
         }
 
         .profile {
             display: flex;
         }
 
-        .right-txt{
+        .right-txt {
             padding-left: 10px;
         }
 
-        .user-name{
+        .user-name {
             font-size: var(--smFont);
         }
 
-        .profile-name{
+        .profile-name {
             font-weight: 600;
+        }
+
+        .sect1,
+        .sect2 {
+            align-items: center;
+            display: flex;
+        }
+
+        .sect1 {
+            justify-content: space-between;
+            width: 750px;
+        }
+
+        .sect2 {
+            width: 400px;
+            justify-content: space-between;
+        }
+
+        .searchbar {
+            background: url('https://api.iconify.design/simple-line-icons/magnifier.svg') no-repeat scroll 7px 10px;
+            padding-left: 30px;
+            background-color: #FFFFFF;
+        }
+
+        .dark {
+            color: #000000;
+        }
+
+        #content {
+            background-color: var(--bgColor);
         }
     </style>
 </head>
 
 <body>
+    <!-- Header Section -->
     <header class="navbar">
-        <div class="logo">
-            <img src="/assets/img/rectangle-5@2x.png" alt="logo" class="logo-img">
-        </div>
-        <form class="d-flex">
-            <input class="form-control me-2 search" type="search" placeholder="Search" aria-label="Search">
-        </form>
-        <div class="profile">
-            <img src="assets/img/rectangle-7@2x.png" alt="profile" class="profile-img">
-            <div class="right-txt">
-                <div class="profile-name">Steve Rogers</div>
-                <div class="user-name">@steve_rogers</div>
+        <section class="sect1">
+            <div class="logo">
+                <a href="index.html"><img src="assets/img/rectangle-5@2x.png" alt="logo" class="logo-img"></a>
             </div>
-        </div>
-        <div class="tiles">
-            <div class="tiles-btn-frame">
-                <a href="" class="tiles-btn"><img src="assets/img/vuesaxboldedit2.svg" alt=""></a>
-                <a href="" class="tiles-btn"><img src="assets/img/vuesaxboldedit2.svg" alt=""></a>
-                <a href="" class="tiles-btn"><img src="assets/img/vuesaxboldedit2.svg" alt=""></a>
+            <form class="d-flex search-form">
+                <input class="form-control me-2 search searchbar" type="search"
+                    placeholder="Search for your friends here" aria-label="Search">
+            </form>
+        </section>
+        <section class="sect2">
+            <div class="profile">
+                <img src="assets/img/rectangle-7@2x.png" alt="profile" class="profile-img">
+                <div class="right-txt">
+                    <div class="profile-name">Steve Rogers</div>
+                    <div class="user-name">@steve_rogers</div>
+                </div>
             </div>
-        </div>
+            <div class="tiles">
+                <div class="tiles-btn-frame">
+                    <a href="" class="tiles-btn"><span class="iconify dark" data-icon="uiw:setting"
+                            data-width="20"></span></a>
+                    <a href="" class="tiles-btn"><span class="iconify dark" data-icon="mingcute:bulb-fill"
+                            data-width="20"></span></a>
+                    <a href="" class="tiles-btn"><span class="iconify dark" data-icon="mdi:bell"
+                            data-width="20"></span></a>
+                </div>
+            </div>
+        </section>
     </header>
-    <main>
-
+    <!-- Content Section -->
+    <main id="content">
+        <div class="side"></div>
+        <div class="middle"></div>
+        <div class="aside"></div>
     </main>
+    <!-- Footer -->
     <footer>
         <!-- place footer here -->
     </footer>
@@ -135,6 +180,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
         integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
         </script>
+
+    <!-- Iconify -->
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
 </body>
 
 </html>
