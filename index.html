@@ -17,7 +17,7 @@
     <style>
         :root {
             --navBg: #A9DEF9;
-            --bgColor: #E5E5E5;
+            --bgColor: #F1FAFF;
             --smFont: 12px;
         }
 
@@ -27,11 +27,8 @@
             box-sizing: border-box;
         }
 
-        header {
-            height: 80px;
-        }
-
         .navbar {
+            height: 10dvh;
             background-color: var(--navBg);
             display: flex;
             justify-content: space-around;
@@ -126,6 +123,27 @@
 
         #content {
             background-color: var(--bgColor);
+            height: 90dvh;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .side {
+            width: 15vw;
+            position: fixed;
+            left: 0;
+            height: 90vh;
+        }
+
+        .shadow-out {
+            background-color: #FFFFFF;
+            box-shadow: -3px 0px 50px rgba(169, 222, 249, 0.25);
+        }
+
+        .aside {
+            width: 20vw;
+            position: fixed;
+            right: 0;
         }
     </style>
 </head>
@@ -162,16 +180,14 @@
             </div>
         </section>
     </header>
+
     <!-- Content Section -->
     <main id="content">
-        <div class="side"></div>
+        <div class="side shadow-out"></div>
         <div class="middle"></div>
         <div class="aside"></div>
     </main>
-    <!-- Footer -->
-    <footer>
-        <!-- place footer here -->
-    </footer>
+
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
