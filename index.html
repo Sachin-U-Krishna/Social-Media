@@ -7,11 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/img/rectangle-5@2x.png" type="image/x-icon">
+    <link rel = "stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600&display=swap" />
     <title>Social Media</title>
 
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
 
     <!-- CSS -->
     <style>
@@ -19,12 +21,17 @@
             --navBg: #A9DEF9;
             --bgColor: #F1FAFF;
             --smFont: 12px;
+            --font-sora: Sora;
         }
 
         * {
             padding: 0;
             margin: 0;
             box-sizing: border-box;
+        }
+
+        .body{
+            font-family: var(--font-sora);
         }
 
         .navbar {
@@ -121,7 +128,7 @@
             color: #000000;
         }
 
-        content {
+        .content { 
             background-color: var(--bgColor);
             height: 90dvh;
             display: flex;
@@ -138,7 +145,9 @@
             box-shadow: -3px 0 50px rgba(169, 222, 249, 0.25);
         }
         
-
+        :not(.side .shadow-out) {
+            background-color: var();
+          }
         .shadow-out {
             background-color: #FFFFFF;
             box-shadow: -3px 0px 50px rgba(169, 222, 249, 0.25);
@@ -164,10 +173,27 @@
             height: 100px;
             width: 100px;
         }
+        .exploretext{
+            padding-top: 50px;
+            padding-left: 50px;
+            padding-bottom: 30px;
+            display: flex;
+        }
+        .exploretext1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .lefticons{
+            padding-left: 50px;
+            padding-bottom: 30px;
+            padding-right: 10px;
+        }
+        
     </style>
 </head>
 
-<body>
+<body class="body">
     <!-- Header Section -->
     <header class="navbar">
         <section class="sect1">
@@ -203,10 +229,40 @@
     <!-- Content Section -->
     <main id="content">
         <div class="side shadow-out">
-            <div class = "sidepanel-image"><img src="assets/img/rectangle-7@2x.png" alt="profile"/></div> 
+            <div class = "sidepanel-image">
+                <img src="assets/img/rectangle-7@2x.png" alt="profile"/></div> 
             <h3 class="sidepanel-name">MANOJ</h3>
-        </div>
-        
+            <div class="explore-panel"> 
+                <p class = "exploretext">EXPLORE PANEL</P>
+                <div class = "lefticons">
+                    <img src="assets/img/group-8.svg"/>
+                    <span>Profile</span>
+                </div>
+                <div class = "lefticons">
+                    <img src="assets/img/group-8.svg"/>
+                    <span>Profile</span>
+                </div>
+                <div class = "lefticons">
+                    <img src="assets/img/group-8.svg"/>
+                    <span>Profile</span>
+                </div>
+                <div class="explore-panel"> 
+                    <p class = "exploretext">SETTINGS</P>
+                    <div class = "lefticons">
+                        <img src="assets/img/group-8.svg"/>
+                        <span>SETTINGS</span>
+                    </div>
+                    <div class = "lefticons">
+                        <img src="assets/img/group-8.svg"/>
+                        <span>SECURITY DATA</span>
+                    </div>
+                    <div class = "lefticons">
+                        <img src="assets/img/group-8.svg"/>
+                        <span>LOG OUT</span>
+                    </div>
+                </div>
+            </div>
+        </div> 
     </div>
         <div class="middle"></div>
         <div class="aside"></div>
