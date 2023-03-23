@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/rectangle-5@2x.png" type="image/x-icon">
+    <title>Social Media</title>
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <style>
+        :root {
+            --navBg: #A9DEF9;
+            --bgColor: #F1FAFF;
+            --smFont: 12px;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            height: 8dvh;
+            background-color: var(--navBg);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .logo-img,
+        .profile-img,
+        .tiles-btn {
+            height: 45px;
+            width: 45px;
+        }
+
+        .tiles {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .tiles-btn-frame {
+            display: flex;
+            padding-left: 5px;
+            justify-content: space-between;
+        }
+
+        .tiles-btn:not(:last-child) {
+            margin-right: 10px;
+        }
+
+        .tiles-btn {
+            background-color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+        }
+
+        .search {
+            width: 622px;
+        }
+
+        .search,
+        .profile-img {
+            box-shadow: 2px 2px #000000;
+        }
+
+        .profile-img {
+            border-radius: 8px;
+        }
+
+        .profile {
+            display: flex;
+        }
+
+        .right-txt {
+            padding-left: 10px;
+        }
+
+        .user-name {
+            font-size: var(--smFont);
+        }
+
+        .profile-name {
+            font-weight: 600;
+        }
+
+        .sect1,
+        .sect2 {
+            align-items: center;
+            display: flex;
+        }
+
+        .sect1 {
+            justify-content: space-between;
+            width: 750px;
+        }
+
+        .sect2 {
+            width: 400px;
+            justify-content: space-between;
+        }
+
+        .searchbar {
+            background: url('https://api.iconify.design/simple-line-icons/magnifier.svg') no-repeat scroll 7px 10px;
+            padding-left: 30px;
+            background-color: #FFFFFF;
+        }
+
+        .dark {
+            color: #000000;
+        }
+
+        content {
+            background-color: var(--bgColor);
+            height: 90dvh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .side{
+            width: 240px;
+            height: 950px;
+            background-color:#FFFFFF;
+            justify-content: center;
+            padding-top: 35px;
+            box-shadow: -3px 0 50px rgba(169, 222, 249, 0.25);
+        }
+        
+
+        .shadow-out {
+            background-color: #FFFFFF;
+            box-shadow: -3px 0px 50px rgba(169, 222, 249, 0.25);
+        }
+
+        .aside {
+            width: 20vw;
+            position: fixed;
+            right: 0;
+        }
+        .sidepanel-image{
+            justify-content: center;
+            display: flex;
+            margin-left: 70px;
+            height: 100px;
+            width: 100px; 
+        }
+        .sidepanel-name{
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            margin-left: 70px;
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="navbar">
+        <section class="sect1">
+            <div class="logo">
+                <a href="index.html"><img src="assets/img/rectangle-5@2x.png" alt="logo" class="logo-img"></a>
+            </div>
+            <form class="d-flex search-form">
+                <input class="form-control me-2 search searchbar" type="search"
+                    placeholder="Search for your friends here" aria-label="Search">
+            </form>
+        </section>
+        <section class="sect2">
+            <div class="profile">
+                <img src="assets/img/rectangle-7@2x.png" alt="profile" class="profile-img">
+                <div class="right-txt">
+                    <div class="profile-name">Steve Rogers</div>
+                    <div class="user-name">@steve_rogers</div>
+                </div>
+            </div>
+            <div class="tiles">
+                <div class="tiles-btn-frame">
+                    <a href="" class="tiles-btn"><span class="iconify dark" data-icon="uiw:setting"
+                            data-width="20"></span></a>
+                    <a href="" class="tiles-btn"><span class="iconify dark" data-icon="mingcute:bulb-fill"
+                            data-width="20"></span></a>
+                    <a href="" class="tiles-btn"><span class="iconify dark" data-icon="mdi:bell"
+                            data-width="20"></span></a>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!-- Content Section -->
+    <main id="content">
+        <div class="side shadow-out">
+            <div class = "sidepanel-image"><img src="assets/img/rectangle-7@2x.png" alt="profile"/></div> 
+            <h3 class="sidepanel-name">MANOJ</h3>
+        </div>
+        
+    </div>
+        <div class="middle"></div>
+        <div class="aside"></div>
+    </main>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+
+    <!-- Iconify -->
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+</body>
+
+</html>
